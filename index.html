@@ -10,7 +10,7 @@
         //will turn true if correct number is given
         let gotIt = false;
         let guess = prompt("guess a number between 1 and 10");
-        let numGuesses = 0; //wo;; store total number of guess
+        let numGuesses = 0; //will store total number of guess
 
         while (gotIt === false){
             numGuesses++; //increment
@@ -23,6 +23,17 @@
 
 
             }else{ // false - tell user to guess again
+                
+                if(num > guess){//higher
+                    guess = prompt("Higher!")
+
+
+
+                }else{//lower
+                      guess = prompt("Lower!")
+
+                }
+                  
                 //alert("Sorry!  You guessed " + guess + " and the number was " + num);
                 //alert ("wrong number!");
                 guess = prompt("Wrong guess again!")

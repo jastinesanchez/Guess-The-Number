@@ -14,37 +14,37 @@
 
         while (gotIt === false){
             numGuesses++; //increment
-            if(num == guess)
-            {// true - tell user and break out of loop
-            
+              if(num == guess)
+              {// true - tell user and break out of loop
+              
 
-              //break out of loop
-                goIt = true;
-
-
-            }else{ // false - tell user to guess again
-                
-                if(num > guess){//higher
-                    guess = prompt("Higher!")
+                //break out of loop
+                  goIt = true;
 
 
-
-                }else{//lower
-                      guess = prompt("Lower!")
-
-                }
+              }else{ // false - tell user to guess again
                   
-                //alert("Sorry!  You guessed " + guess + " and the number was " + num);
-                //alert ("wrong number!");
-                guess = prompt("Wrong guess again!")
-          
+                  if(num > guess){//higher
+                      guess = prompt("Higher!")
+
+
+
+                  }else{//lower
+                        guess = prompt("Lower!")
+
+                  }
+                    
+                  //alert("Sorry!  You guessed " + guess + " and the number was " + num);
+                  //alert ("wrong number!");
+                  //guess = prompt("Wrong guess again!")
+            
           
           
             }
 
         
           }
-        alert("Got it!! You guessed " + numGuesses +" times!");
+        alert("Got it!! You guessed " + numGuesses + " times!");
 
       
 
